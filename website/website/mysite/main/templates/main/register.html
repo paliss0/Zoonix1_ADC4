@@ -1,0 +1,10 @@
+{% extends "main/header.html"%}
+{% block content %}
+	<form method="POST">
+		{% csrf_token %}
+		{{form}}
+		<button class="btn" style="background-color: black; color: white" type="submit">
+			Submit
+		</button>
+	</form>
+{% endblock%}
