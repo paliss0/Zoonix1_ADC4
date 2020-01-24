@@ -1,0 +1,26 @@
+<html>
+	{% extends "main/header.html" %}
+		 {% block content %}
+       
+			<div class="row">
+				{% for p in parlours %}
+    			<div class="col s12 m6">
+      				<div class="card blue-grey darken-1">
+        			<div class="card-content white-text">
+          			<span class="card-title">Card Title</span>
+          				<p >{{p.parlour_content}}</p></style>
+        				<p style="font-size: 70%">{{t.date}}</p>
+        			</div>
+
+        				<div class="card-action">
+          					<a href="#">visit</a>
+          
+        				</div>
+      				</div>
+    			</div>
+    			{% endfor%}
+  			</div>
+       {% endblock %}			
+</html>	
+	
+
